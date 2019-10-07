@@ -1,0 +1,167 @@
+tags: https://www.quackit.com/html_5/tags/
+
+HTML notes:
+<!DOCTYPE html> - lets browser know which html it is using
+<html>  the document's root element - it can be thought of as a container that all other tags sit inside (except for the !DOCTYPE declaration).
+<head> contains information that is not normally viewable within your browser (such as meta tags, JavaScript and CSS), 
+	although the <title> tag is an exception to this. 
+	The content of the title tag is displayed in the browser's title bar (right at the very top of the browser).
+<body> is the main area for your content. This is where most of your code (and viewable elements) will go.
+<h1> defines a level 1 heading.
+<p> defines a paragraph. This contains the body text.
+
+
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+
+<strong></strong> - dark bold
+<em></em> - emphasis (italics)
+<br> - line break
+<hr> - thematic break (paragraph etc)
+<ul> - unordered/unnumbered list
+<ol> - ordered list
+<li> - list item
+
+--------------ATTRIBUTES------------- 
+<abbr title="hover tooltip help">HINT</abbr>
+	- HINT appears and when u hover, 
+	title appears as a tooltip
+
+<a> href="www.gotothislink.com" title="hover tooltip">Website</a>
+
+	-class - used w/ CSS to apply styles from given class
+	-style - used w/ CSS to apply stles directly to element
+	-title - used for tooltip
+
+
+SEPERATE FILE
+
+To add an external stylesheet to a web page, use the <link> tag, 
+providing the URL of the style sheet in the href attribute, 
+as well as rel="stylesheet".
+
+<link rel="stylesheet" href="/html/tutorial/html_styles_example.css">
+
+--OR--
+-inefficient in HTML, but can be used from one css to another w no performance issues
+
+<style> @import 'styles.css'; </style>
+
+
+border-width
+border-style
+border-color
+background-color
+
+
+<h3 style="color:blue">Color Name</h3>
+<h3 style="color:#0000ff">Hexadecimal</h3>
+<h3 style="color:rgb(0,0,255)">RGB Value</h3>
+<h3 style="color:rgba(0,0,255,A value)">RGB Value</h3>
+
+
+LINKS
+<a href="https://www.quackit.com/html/tutorial/">HTML Tutorial</a>
+
+href can be relative also "tutorial/" or "/html/tutorial/"
+
+target="where to open file"
+"_blank" - new window
+"_self" - current window
+"_parent" - parent frame (same window) (applicable when using frames)
+"_top" loads to current window - cancels any frames
+
+JUMP LINKS or NAMED ANCHORS
+jump to sections on page
+
+1. add ID to link target 
+	<h2 id="elephants">Elephants</h2>
+2. create hyperlink
+	<a href="#elephants">Jump to Elephants</a>
+
+href="mailto:ethanchen111@gmail.com?subject=Hello Ethan&body=firstlineinemail"><Email Ethan</a>
+
+<base url="https://www.basewebsite.com">		-declare in head
+href ="about"  ie basewebsite/about
+
+
+METADATA
+<meta name="author" content="Homer Simpson">
+
+refresh page every 10 seconds
+<meta http-equiv="refresh" content="10">
+
+comments <!-- -->
+
+
+---------FORMS-----------
+TEXT
+<form>
+	First name: <input type="text" name="firstname">
+	Last name: <input type="text" name="lastname">
+</form>
+
+TEXT AREA - larger text box
+<form>
+    <textarea maxlength="100" rows="5" cols="30">Enter comments here.</textarea>
+</form>
+
+
+IDEA: website guestbook - filter out bad words etc
+
+RADIO BUTTONS
+<form>
+    <input type="radio" name="lunch" value="pasta"> Pasta
+    <input type="radio" name="lunch" value="risotto"> Risotto
+</form>
+
+CHECKBOXES
+<form>
+    <input type="checkbox" name="technology" value="HTML"> I know HTML
+    <input type="checkbox" name="technology" value="CSS"> I know CSS
+</form>
+
+SUBMIT
+<form action="/html/tags/html_form_tag_action.cfm" method="get">
+    <input type="checkbox" name="technology" value="HTML"> I know HTML
+    <input type="checkbox" name="technology" value="CSS"> I know CSS
+    <input type="submit">
+</form>
+
+
+		**ACTION** 
+Usually when a user submits the form, you need the system to do something with the data. 
+This is where the action page comes in. The action page is the page that the form is submitted to. 
+This page could contain advanced scripts or programming that 
+inserts the form data into a database or emails an administrator etc.
+
+SELECTLIST
+<form>
+    <select>
+        <option value="sydney">Sydney</option>
+        <option value="melbourne">Melbourne</option>
+        <option value="cromwell">Cromwell</option>
+        <option value="queenstown">Queenstown</option>
+    </select>
+</form>
+
+
+You may have noticed the above example uses a method attribute. 
+This attribute specifies the HTTP method to use when the form is submitted.
+
+METHOD:
+
+	get
+The form data is appended to the URL when submitted. 
+This means you can actually see the form variables in your browser's address bar when the form is submitted. 
+This can be handy for non-sensitive data such as a search engine's results page. 
+It also allows you to bookmark the page and even link to it from another web page.
+	post
+The form data is not appended to the URL.
+
+
+

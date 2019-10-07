@@ -1,0 +1,64 @@
+Cascading style sheets
+
+syntax:
+Property:value;
+
+Inline style: <p style="color:olive;font-size:24px;">HTML Styles with CSS</p>
+
+Embedded styles:
+
+makes everything in body this:
+body {
+ 	background-color: darkslategrey;
+        color: azure;
+        font-size: 1.1em;
+}
+
+makes everything in h1 this:
+h1 {
+	color: coral;
+}
+
+defines a syle to be used by saying ' id="intro" '
+#intro {
+	font-size: 1.3em;
+}
+
+defines a class to be used by saying ' class="colorful" '
+.colorful {
+	color: orange;
+}
+
+
+SPACE in text : &nbsp;
+
+
+Center text in div (best method so far):
+<div class="table">
+      <div class="textCenter">
+            <h1>anything</h1><p>youwant</p><p>will be centered</p>  (might need inline for the h1 an p tags)
+      </div>
+</div>
+
+
+.table{
+    display: table;
+}
+
+.textCenter{
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    width: 100%;
+
+}
+
+
+FLOAT:
+will not increase height of parent div unless you 
+<div style="clear: both;"></div> 
+after all the float elements.
+
+link:
+https://stackoverflow.com/questions/16568272/why-doesnt-the-height-of-a-container-element-increase-if-it-contains-floated-el
+

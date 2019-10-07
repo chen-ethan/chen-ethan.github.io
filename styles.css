@@ -1,0 +1,1282 @@
+:root{
+    
+    --main-text-color: #FFFFFF;
+    /*
+    --main-hl-color: #DA7B93;
+    --two-hl-color: #2E151B;
+    --main-bg-color: #2f4454;
+    --two-bg-color: #376E6F;
+    --main-comp-color: #1C3334;
+    */
+    --two-hl-color: #b17f00;
+    --main-hl-color: #5c0009;
+    --main-bg-color: #bf8850;
+    --two-bg-color: darkslategrey;
+    
+    --main-comp-color: #3b3b3f;
+    
+    --max-width: 1200px;
+    
+    
+    --header-font: 'Merriweather', serif;
+    --sub-font: 'Merriweather', serif; 
+    --text-font: 'Montserrat', sans-serif;
+    
+} 
+
+
+.mainBG{
+    background: var(--main-bg-color);
+}
+
+.twoBG{
+    background: var(--two-bg-color);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body {
+    /*background-color:#444c57;*/
+    height: 3610vh;
+    padding: 0;
+    margin: 0;
+    max-width: var(--max-width);
+}
+
+.wrapper {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: var(--main-bg-color);/*comment this for revelal: itll block behind*/
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.Banner {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    margin: 0px 0px 0px 0px;
+    background: 50% 50% / cover;  
+    z-index: -3;
+    filter: contrast(.75);
+
+}
+.TitleBox{
+    width: 100%;
+    max-width: var(--max-width);
+    height: 20vh;
+    position: absolute;
+    z-index: 0;
+    margin: 15vh auto 0 auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.TitleWrapper{
+    /*width: 70vw;*/
+    margin: 0 35% 0 5%;
+    height: inherit;
+    width: 100%;
+}
+.TitleWrapper h2{
+    position: absolute;
+    text-align: left;
+    font-size:calc( 3vh + 2.5vw);
+    top: 0px;
+    color: var(--main-text-color);
+
+
+}
+.NameBox{
+    width: 100%;
+    max-width: var(--max-width);
+    height: 30vh;
+    position: absolute;
+    z-index: 2;
+    margin: 45vh auto 0 auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.NameWrapper{
+    margin-left: 5%;
+    width: 42.5%;
+    height: inherit;
+    position: relative;
+     /*20vh for centered*/
+
+}
+.NameWrapper h1{
+    text-align: center;
+    position: relative;
+    color: var(--main-text-color);
+    /*.8 x .5 = .4*/
+    font-size:calc( 4vh + 2.5vw);
+    
+    font-family: var(--header-font);
+    font-weight: 500;
+    top: 0px;
+    margin: 0;
+
+}
+.NameWrapper h3{
+    position: relative;
+    text-align: center;
+    vertical-align: top;
+    font-size:calc( 2.25vh + 1.5vw);
+    
+    font-family: var(--header-font);
+    font-weight: 100;
+    color: var(--main-text-color);
+    margin: 0;
+
+
+}
+
+.contentHeader{
+    height: 20vh;
+    width: 100%;
+    max-width: var(--max-width);
+    position: fixed;
+    margin: 0 auto 0 auto;
+    z-index: 3;
+    /*opacity: 0;*/
+    
+    
+}
+
+.contentHeader1{
+    height: 15vh;
+    width: 100%;
+    position: relative;
+    max-width: var(--max-width);
+    margin: 0 auto 0 auto;
+    z-index: 3;
+    /*opacity: 0;*/
+    border: 1px solid transparent;
+    box-sizing: border-box;
+
+}
+.contentHeader1 h1{
+    text-align: left;
+    color: var(--main-hl-color);
+    /*.8 x .5 = .4*/
+    font-size:calc( 4vh + 1.5vw);
+    font-family: var(--header-font);
+    font-weight: 900;
+    vertical-align: middle;
+    margin: 4vh 0 0 5%;
+
+}
+.contentHeader h1{
+    text-align: left;
+    position: relative;
+    color: var(--main-hl-color);
+    /*.8 x .5 = .4*/
+    font-size:calc( 3vh + 3vw);
+    top: 5vh ;
+    vertical-align: middle;
+    margin: 0;
+    left: 10%;
+
+}
+.contentWrapper{
+    /*background: #A2A6AA;*/
+    width: 100%;
+    /*max-height: 200vh;
+    max-width: var(--max-width);*/
+    min-height: 100vh;
+    height: auto;
+    margin: 0;
+    position: relative;
+    /*margin: 0 auto 0 auto;*/
+    z-index: 1;
+    /*border: none !important;*/
+    padding: 0;
+}
+
+
+.AboutWrapper{
+    background: var(--main-comp-color);
+    width: 100%;
+    max-width: var(--max-width);
+    height: 100vh;
+    position: relative;
+    margin: 0 auto 0 auto;
+    z-index: 1;
+    border: none !important;
+    padding: 0;
+    overflow: hidden;
+    
+    
+}
+
+.block{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+    height: 30vh;
+    position:relative;
+    width: 100%;
+
+    
+    /*
+    width: 100%;
+    margin: 0; 
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    
+    border: 2px dashed pink;
+    */
+    
+    
+
+}
+.block img{
+    flex-shrink: 0;
+    min-height: 100%;
+    min-width: 100%;
+
+    /*
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0;    
+    */
+    
+}
+
+.pixelImg{
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    
+}
+
+.ProjectWrapper{
+    background: var(--main-bg-color);
+    width: 100%;
+    max-width: var(--max-width);
+    height: 100vh;
+    position: relative;
+    margin: 0 auto 0 auto;
+    z-index: 1;
+    padding: 0;
+    overflow: hidden;
+    
+}
+.ProjectTitle{
+    width: 100%;
+    /*height: 35vh;*/
+    position: relative;
+    margin: 0 auto 0; /*20vh for centered*/
+    z-index: 2;
+    overflow: hidden;
+    
+}
+.ProjectTitle h1{
+    text-align: center;
+    position: relative;
+    color: black;
+    /*.8 x .5 = .4*/
+    font-size:calc( 3.5vh + 1.25vw);
+    
+    font-family: var(--header-font);
+    font-weight: 500;
+    top: 0px;
+    margin: 0;
+    
+}
+.ProjectTitle h3{
+    text-align: center;
+    font-size:calc( 2vh + .75vw);
+    font-family: var(--header-font);
+    font-weight: 100;
+    color: black;
+    top: 0px;
+    margin: 0;
+
+
+}
+
+.leftside{
+    float:left;
+    position: relative;
+    z-index: 10;
+    margin: 0 0 0 5%;
+    width: 43.75%;
+    height: auto;
+    overflow: hidden;
+
+}
+.rightside{
+    float:right;
+    position: relative;
+    margin: 0 5% 0 0;
+    width: 43.75%;
+    height: auto;
+    overflow: hidden;
+}
+
+.EducationWrapper{
+    background:  var(--two-bg-color);
+    max-width: var(--max-width);
+    width: 100%;
+    width: 100%;
+    height: 310vh;
+    position: relative;
+    margin: 0px auto 0px auto;
+    z-index: 1;
+
+    
+}
+.EducationBlockWrapper{
+    width: inherit;
+    height: inherit;
+    position: relative;
+    margin: 0;
+
+}
+.EducationBlock {
+    width: 90%;
+    left: 5%;
+    position: absolute;
+    height: 20vh;
+    background-color: var(--main-bg-color);
+    
+    padding: 0;
+    
+    border: 2px solid var(--main-hl-color);
+    box-sizing: border-box;
+    
+    -webkit-transition: all .25s ease;
+
+}
+
+.EducationBlock:hover {
+    background-color: var(--main-hl-color);
+    height: 30vh;
+    z-index: 5;
+    transform: translateY(-5vh);
+    left: 0%;
+    width: 100%;
+}
+.EducationBlock h1{
+    font-size:calc( 2.25vh + 1.25vw);
+    text-align: center;
+    margin: auto 0px auto  0px;
+    color:  var(--main-hl-color);
+    -webkit-transition: all .25s ease;
+
+    font-family: var(--header-font);
+    font-weight: 500;
+    opacity: 1;
+}
+.EducationBlock h2{
+    opacity: 0;
+    font-size:calc( 2.25vh + 1.25vw);
+    text-align: center;
+    margin: auto 0px auto  0px;
+    color:  var(--main-text-color);
+    -webkit-transition: all .25s ease;
+    
+    max-height: 10vh;
+    
+    
+    font-family: var(--header-font);
+    font-weight: 500;
+
+}
+.EducationBlock:hover h2{
+    opacity: 1;
+}
+.EducationBlock:hover h1{
+    opacity: 0;
+}
+.EducationBlock .leftside{
+    float:left;
+    position: relative;
+    z-index: 10;
+    margin: 1.25vh auto 0 2.5%;
+    width: 22.5%;
+    height: 20vh;
+    display: none;
+    display: block;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: all .25s ease;
+
+
+    
+}
+.EducationBlock .rightside{
+    float:left;
+    position: relative;
+    margin: 1.25vh 5% 0 2.5%;
+    width: 65%;
+    height: 20vh;
+    overflow: visible;
+    opacity: 0;
+    display: block;
+    pointer-events: none;
+    -webkit-transition: all .25s ease;
+
+
+    font-family: var(--text-font);
+    font-weight: 300;
+    
+}
+.EducationBlock:hover .rightside{
+    display: block;
+    opacity: 1;
+}
+.EducationBlock:hover .leftside{
+    display: block;
+    opacity: 1;
+}
+.EducationBlock .img_cropper{
+    
+    width: 15vh;
+    height: 15vh;
+    position: relative;
+    overflow: hidden;
+    margin: 2.5vh auto 2.5vh auto;
+    border-radius: 50%;
+    background-color: var(--main-text-color);
+    display: block;
+
+    /*border: 4px solid var(--two-hl-color);*/
+
+    
+}
+.EducationBlock img {
+    margin: 5% auto 5% auto;
+    display: none;
+    
+    
+    height: 90%;
+    width: auto;
+    
+}
+
+
+.EducationBlock:hover .img_cropper{
+    display: block;
+}
+.EducationBlock:hover img{
+    display: block;
+}
+.EducationBlock p{
+    margin: 0 auto 0 auto;
+    position: relative;
+    color: var(--main-text-color);
+    font-size:calc( 1vh + .65vw);
+
+}
+.EducationBlock ul{
+    margin: 0 auto 0 auto;
+    position: relative;
+    color: var(--main-text-color);
+    font-size:calc( 1.25vh + .25vw);
+
+}
+.EducationBlock .language{
+    margin: 0 auto 0 20px;
+    position: relative;
+    color: var(--main-text-color);
+    font-size:calc( 1.25vh + .25vw);
+    font-weight: 700;
+}
+
+
+.EducationTextWrap {
+    top: 30%;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    display: block;
+}
+.VertAlign {
+    position: relative;
+    top: 0%;
+    text-align: center;
+    
+}
+
+.cap1{
+    margin: .75vh auto 0 auto;
+    width: 90%;
+    font-size:calc( 1vh + .5vw);
+    position: relative;
+    color: black;
+    font-family: var(--text-font);
+    font-weight: 100;
+}
+
+
+.paragraph{
+    margin: 0 auto 0 auto;
+    width: 100%;
+    font-size:calc( 1.5vh + .5vw);
+    position: relative;
+    color: var(--main-text-color);
+    font-family: var(--text-font);
+    font-weight: 300;
+}
+.paragraph h1{
+    font-size:calc( 1.5vh + 1.5vw);
+
+    
+}
+
+#proj4 .rightside .paragraph{
+    font-size:calc( 1.25vh + .5vw);
+
+}
+
+.skills{  /*The list of skills on project page NOT the section*/
+    margin: 0 auto 0 auto;
+    width: 100%;
+    height: auto;
+    max-height: 25vh;
+    font-size:calc( 1vh + .5vw);
+    position: relative;
+    color: black;
+    
+    
+    font-family: var(--text-font);
+    font-weight: 300;
+    
+}
+.skills h1{
+    font-size:calc( 1.25vh + 1vw);
+    margin-left: 20px;
+    
+}
+
+.skills .li{
+    display: inline;
+    list-style: circle;
+}
+
+.ExperienceWrapper{
+    background: var(--main-bg-color);
+    width: 100%;
+    max-width: var(--max-width);
+    height: 200vh;
+    position: relative;
+    margin: 0 auto 0 auto;
+    z-index: 1;
+    top: 0vh;    
+    box-sizing: border-box;
+    /*border: 3px solid white;*/
+
+
+}
+
+.ExperienceBlock{
+    position: relative;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 5vh;
+
+    height: 40vh;
+    box-sizing: border-box;
+    
+    border: 3px solid var(--main-hl-color);
+    background-color: var(--main-comp-color);
+}
+
+.ExperienceBlock .header{
+    width: 100%;
+    height: 20%;     
+    vertical-align: bottom;
+    margin: 2.5vh auto 0% auto;
+    background-color: var(--main-hl-color);
+    color: var(--main-bg-color);
+    font-family: var(--header-font);
+    
+
+}
+.ExperienceBlock .company{
+    font-size:calc( 2vh + 1.25vw);
+    vertical-align: baseline;
+    display: inline-block;
+    margin-left: 2.5%;
+    font-weight: 800;
+    
+
+}
+.ExperienceBlock .time{
+    font-size:calc( .95vh + .55vw);
+    vertical-align: baseline;
+    display: inline-block;
+    margin-left: 2.5%;
+    font-weight: 200;
+    font-family: var(--text-font);
+
+
+
+}
+.ExperienceBlock .title{
+    font-size:calc( 1.5vh + .75vw);
+    vertical-align: baseline;
+    display: inline-block;
+    margin-left: 2.5%;
+    font-weight: 500;
+
+}
+
+.ExperienceBlock .leftside{
+    float:left;
+    position: relative;
+    z-index: 10;
+    margin: 2.5vh auto 0 2.5%;
+    width: 22.5%;
+    height: 20vh;
+    overflow: visible;
+
+}
+.ExperienceBlock .img_cropper{
+    
+    width: calc( 8.95vh + 4.5vw);
+    height: calc( 8.95vh + 4.5vw);
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto 2.5vh auto;
+    border-radius: 50%;
+    background-color: var(--main-text-color);
+    display: block;
+    
+}
+.ExperienceBlock img {
+    margin: 0;
+    height: 100%;
+    width: auto;
+}
+
+.ExperienceBlock .rightside{
+    float:left;
+    
+    position: relative;
+    margin: 1.25vh 5% 0 2.5%;
+    width: 65%;
+    height: 20vh;
+    overflow: visible;
+
+    font-weight: 300;
+    font-family: var(--text-font);
+
+}
+.ExperienceBlock li{
+    font-size:calc( 1.25vh + .5vw);
+    color: var(--main-text-color);
+    margin: 0;
+
+}
+
+
+
+.SkillsWrapper{
+    width: 100%;
+    height: 100vh;
+    background: var(--two-bg-color);
+    max-width: var(--max-width);
+    margin: 0 auto 0 auto;
+}
+.SkillsContainer{
+    position: relative;
+    top: 0;
+    width: 90%;
+    padding: 0;
+    font-size: 0;
+    margin: 0 auto 0 auto;
+
+
+}
+
+.SkillsBlock{
+    width: 22.5%;
+    height: 17.5vh;
+    position: relative;
+    box-sizing: border-box;
+    /*border: 2px solid var(--main-bg-color);*/
+    background: var(--main-hl-color);
+    display: inline-block;
+    margin: 0 2.5% 2.5vh 0%;    
+    /*padding: 2.5vh 2.5% 2.5vh 2.5%;*/
+    overflow: hidden;
+
+}
+
+.table{
+    display: table;
+
+    height: 100%;
+    width: 100%;
+}
+
+.textCenter{
+    
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    width: 100%;
+
+}
+
+.SkillsBlock h1{
+
+    margin: 0 auto 2.5% auto;
+    width: 100%;
+    font-size:calc( 2.5vh + 1vw);
+    position: relative;
+    color: var(--main-bg-color);
+    text-align: center;
+    -webkit-transition: all .25s ease;
+    font-weight: 700;
+    font-family: var(--text-font);
+
+}
+/*
+.SkillsBlock:hover h1{
+    font-size:calc( (2.5vh + 1vw) * 1.2);
+    
+
+}
+*/
+.SkillsBlock p{
+    margin: 0 auto 0 auto;
+    width: 100%;
+    font-size:calc( 1.25vh + .75vw);
+    position: relative;
+    color: var(--main-bg-color);
+    text-align: center;
+    display: none;
+    opacity: 0;
+    /*border: .5px white solid;*/
+    
+    
+    font-weight: 300;
+    font-family: var(--text-font);
+}
+
+.SkillsBlock:hover p{
+    display: inline-block;
+    opacity: 1;
+
+}
+
+.SkillsBlock:hover .Preferred{
+    color: #fc03ec;
+}
+.SkillsBlock:hover .Proficient{
+        color: lawngreen;
+}
+.SkillsBlock:hover .Comfortable{
+        color:cornflowerblue;
+}
+.SkillsBlock:hover .Adequate{
+        color:orange;
+}
+.SkillsBlock:hover .Experimenting{
+        color:cyan;
+}
+
+
+.footer{
+    position: absolute;
+    background: var(--main-comp-color);
+    height: 65vh;
+    top: 40vh;
+    width: 100%;
+}
+
+.footerContents{
+    position: relative;
+    margin-bottom: 5vh;
+    height: 30vh;
+    margin: 10vh auto 10vh auto;
+    width: 100%;
+    max-width: var(--max-width);
+}
+
+.footer h1{
+    color: var(--main-text-color);
+    text-align: left;
+    margin: 0 10% 0 10%;
+    position: relative;
+    font-size: calc(2.5vh + 1.75vw);
+    font-family: var(--header-font);
+    font-weight: 800;
+    letter-spacing: 5.4px;
+
+}
+
+.footer p{
+    margin: 6vh 10% 0 10%;
+    color: var(--main-text-color);
+    text-align: left;
+    position: relative;
+    font-family: var(--text-font);
+    font-weight: 200;    
+
+}
+
+.ResumeBox{
+    color: var(--main-text-color);
+    text-align: left;
+    margin: 5vh 10% 0 10%;
+    width: 10%;
+    min-width: 75px;
+    height: 5vh;
+    position: relative;
+    border: 1.5px solid var(--two-hl-color);
+    box-sizing: border-box;
+    display: block;
+}
+
+
+.Resume{
+    text-align: center;
+    width: auto;
+    position: relative;
+    box-sizing: border-box;
+    display: block;
+    font-size: calc(1vh + .75vw);
+    
+    font-family: var(--text-font);
+    font-weight: 600;
+    letter-spacing: 1.2px;
+
+}
+.footer .ResumeBox:hover{
+    color: var(--two-hl-color);
+    border: none;
+    background-color: var(--main-text-color);
+    cursor: pointer; 
+    
+}
+.ProjectWrapper .ResumeBox{
+    float:left;
+    position: relative;
+    margin: 1.25vh auto 0 auto;
+    box-sizing: border-box;
+    
+    
+    border: 1.5px solid var(--main-hl-color);
+    color: var(--main-hl-color);
+}
+
+.ProjectWrapper .ResumeBox:hover{
+    color: var(--main-text-color);
+    background-color: var(--main-hl-color);
+
+
+    cursor: pointer; 
+    
+}
+
+.ProjectWrapper .fa-github{
+    border: 1.5px solid var(--main-hl-color);
+    background: none;
+    color: var(--main-hl-color);
+
+}
+
+.ProjectWrapper .fa-github:hover{
+    background: var(--main-hl-color);
+    color: white;
+}
+
+.ProjectWrapper .paragraph{
+    color: black;
+    font-size:calc( 1.5vh + .5vw);
+
+}
+
+.navWrapper{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+    pointer-events: none;
+    max-width: var(--max-width);
+    border: 1px solid black;
+    margin: auto auto auto auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.navigation{
+    position: relative;
+    margin: 10vh 0% auto auto;
+    width: 5%;
+    height: 50%;
+    background-color: aqua;
+    pointer-events: all;
+
+}
+.navigation:hover{
+    background-color: green;
+
+}
+
+
+.navCircle{
+    position: relative;
+    width: 100%;
+    height: 25px;
+    border-radius: 50%;
+    background-color: red;
+    pointer-events: all;
+}
+.navCircle:hover{
+    background-color: orange;
+}
+
+.videoWrap{
+    width: 100%; 
+    height: auto; 
+    max-height: 50vh; 
+    overflow: hidden; 
+    position: relative; 
+    margin: 1.25vh auto 0 auto; 
+}
+
+.videoCap{
+    font-size:calc( 1.25vh + .75vw);
+    position: relative;
+    color: var(--main-text-color);
+    position: absolute; 
+    margin: 5% 5% 0 5%; 
+    max-width: 90%; 
+    z-index: 3;
+}
+
+.videoInsert{
+    position: absolute; 
+    right: 0; 
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; 
+    height: auto; 
+    z-index: -100;
+    background-size: cover;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//*old code*//
+
+.projects {
+    max-width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+
+    position: relative;
+    margin: 0px 0px 0px 0px;
+}
+
+.slide {
+    display: none;
+    max-width: 100%;
+    width: 100%;
+    
+    
+}
+
+
+
+
+
+.banner {
+    max-width: 100%;
+    //max-height: 500px;
+    max-height: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    margin: 0px 0px 0px 0px;
+}
+
+
+
+.bannerDE {
+    width: 100%;
+    //max-width: 100%;
+    height: 100%;
+    //max-height: 500px;
+    position: relative;
+    background-image: url(DungeonEscape/DungeonEscapePattern.png);
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    //line-height: 500px;
+    //vertical-align: middle;
+    //display: inline-block;
+
+
+}
+
+
+
+
+
+.bannerCaption {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    display: block;
+    position: absolute;
+    
+}
+
+.bannerCaption:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.centered {
+    display: inline-block;
+    //vertical-align: middle;
+    font-size: 40px;
+    //background-color: #444c57;
+    height: auto;
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.3);
+}
+
+.caption {
+  color: #f2f2f2;
+  font-size: 15px;
+  //padding: 8px 12px;
+  position: absolute;
+  //bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #6f7c8e;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #9ba4b1;
+}
+
+.fade {
+    opacity: 0;
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
+
+
+.nameclass {
+    text-align: center;
+    font-size: 0px;
+
+    
+}
+
+.name {
+    
+    font-size: 40px;
+    margin: 5px 0px 5px;
+    font-family: Oswald, sans-serif;
+    display: inline-block;
+    
+}
+
+.name2 {
+    
+    font-size: 33px;
+    margin: 5px 0px 5px 0px;
+    font-family: Oswald, sans-serif;
+    display: inline-block;
+    
+}
+
+.image_cropper {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0% auto 5% auto;
+
+}
+
+.image_cropper img {
+    height: 100%;
+    width: auto;
+    //margin-left: -50px;
+    //margin-top: 20px;
+}
+
+#center {
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+
+/*social media buttons*/
+.fa{
+    padding: 5px;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0px 2px;
+    border-radius: 25%;
+    vertical-align: top;
+}
+
+.fa-linkedin {
+    background: var(--two-hl-color);
+    color: white;
+}
+.fa-linkedin:hover{
+    background: white;
+    color: var(--two-hl-color);
+}
+.fa-github {
+    background: var(--two-hl-color);
+    color: white;
+}
+.fa-github:hover{
+    background: white;
+    color: var(--two-hl-color);
+}
+.fa-mail {
+    background: var(--two-hl-color);
+    color: white;
+}
+.fa-mail:hover{
+    background: white;
+    color: var(--two-hl-color);
+
+    /**3a96b5*/
+}
+
+
+.expandCaret{
+    display: block;
+    width: auto;
+    height: auto;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0vh;
+    z-index: 7;
+    color: #FFFFFF;
+    font-size:calc( 2vh + 2vw);
+    
+    cursor: pointer;
+    transition: 2.6 ease;
+}
+
+.ProjectWrapper hr{
+    color: black;
+    background-color: black;
+
+}
+
+hr{
+    border-style: solid;
+    color: white;
+    background-color: white;
+    width: 100%;
+}
+
+.expandCaret:hover{
+    color:  var(--main-hl-color);
+}

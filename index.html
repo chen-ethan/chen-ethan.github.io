@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ethan Chen</title>    
+        <meta charset="UTF-8" name="viewport" content="width=device-width, user-scalable=no">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat&display=swap" rel="stylesheet">
+        <script src="slideshow.js" type="text/javascript"></script> 
+        <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+
+    </head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
+
+
+
+
+
+    <body>
+        
+        
+        
+        <div class="wrapper">
+            <!--Navigation
+            <div class="navWrapper">
+                <div class="navigation">
+                    <div class="navCircle"></div>
+                
+                </div>
+                
+            </div>
+            -->
+
+            <!--Background-->
+            <div class="Banner" style="background-image: url(Images/mountains.jpg)" data-scroll-speed="6" data-fast-scroll-speed="6">
+            </div>
+            
+            
+            <!--Title
+            <div class="TitleBox" data-scroll-speed="3" data-fast-scroll-speed="3" data-scroll-begin="85" data-scroll-until="0" >
+                <div class="TitleWrapper" >
+                        <h2>An Interactive Resume By:</h2>
+                </div>
+            </div>-->
+            <!--Name-->
+            <div class="NameBox" data-scroll-speed="3" data-fast-scroll-speed="3" data-scroll-begin="70" data-scroll-until="0" >
+                <div class="NameWrapper">
+                    <h1>Ethan Chen</h1>
+                    <hr>
+                    <h3>Software Developer</h3>
+                </div>
+            </div>
+            
+            
+            
+
+            
+            
+            <!--arrow0-->
+            <a id="arrow" align="middle" class="expandCaret" data-scroll-to="100" data-hide-after="20" style="text-decoration: none">╲╱</a>
+            
+            <!--section1    --ABOUT-- -->
+            <div id="section1" class="contentWrapper" style="background: #3b3b3f;" data-scroll-speed="3" data-fast-scroll-speed="3" >
+                <div id="About" class="AboutWrapper">
+                    <div class="contentHeader1 fade" data-fade-begin="60" data-fade-end="75"><h1 style="color:#b17f00">About</h1></div>
+                    <div class="leftside" style="margin-top: 25vh;">
+                        <!--photo-->
+                        <div id="profilePic" class="image_cropper fade" data-fade-begin="40" data-fade-end="55">
+                            <img src="Images/Butchart3.JPG" alt="Headshot">
+                        </div>
+                        <!--social links  align="middle"-->
+                        <div style="position: relative; text-align: center">
+                            <div style=" margin: 0 auto 0 auto;  display: inline-block;">
+                                <span   onclick="window.open('https://www.linkedin.com/in/ethanpchen/')" target="_blank" class="fa fa-linkedin" style="font-size: 25px; width: 25px; height: 25px; cursor: pointer;"></span>
+                                <span onclick="window.open('https://github.com/chen-ethan')" target="_blank" class="fa fa-github"  style="font-size: 25px; width: 25px; height: 25px; cursor: pointer;"></span>
+                                <span onclick="window.open('mailto:ethanchen111@gmail.com')" class="material-icons fa fa-mail" style="font-size: 25px; width: 25px; height: 25px; cursor: pointer;" >email</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rightside" style="top: 5vh;">
+                        <!--about parag-->
+                        <div class="paragraph" >
+                            <!--
+                            I was born and raised in San Francisco, and was fortunate enough to gain some early exposure to the inner workings of how a major tech company operates. I fell in love with software development as soon as I coded my second program, right after: 
+                            <div style="text-align: center;"><span style="border: 1px solid #b17f00">System.out.println(“Hello World”);</span></div>
+                            <br>
+                            
+                            -->
+                            I am currently a fourth year Computer Science major at the University of California in Irvine. I love developing quality software for various platforms. I have experience in back-end object oriented programming, front-end web development, Unity Engine game creation, and Virtual Reality development among other things. Nothing makes me happier than developing a clever solution to a problem I am facing. Once I have a bare-bones solution, I will then go back and analyze possible improvements to develop a less demanding algorithm. 
+                            I work most efficiently on my own code, but I extremely value code reviews and working through efficient algorithms with my peers and superiors. 
+
+                        </div> 
+
+                    </div>
+                </div>
+            </div>
+         
+            
+            
+            
+            <!--section2 Projects-->
+            
+            
+                <!--Project1-->
+            <div class="contentWrapper mainBG" data-scroll-speed="3" data-fast-scroll-speed="3">
+                <div id="proj1" class="ProjectWrapper" >
+                    <div class="contentHeader1 fade" data-fade-begin="120" data-fade-end="135" ><h1>Personal Projects</h1></div>
+                    <div class="leftside" style="" >
+                        <div class="block fade pixelImg" data-fade-begin="150" data-fade-end="165" ><img src="DungeonEscape/DungeonEscapePattern.png" alt="DungeonEscape img1"></div>
+                        <!--DE parag-->
+                        <div class="paragraph fade" style=" margin-top:2.5vh; z-index: 3; "  data-fade-begin="170" data-fade-end="185">“Dungeon Escape” is a Unity based, 2D adventure-maze game. The goal of each level is to find the key and use it to escape out of the door, while avoiding enemies. The game is intended for mobile and is coming to the App store shortly! I am the sole creator of “Dungeon Escape” and handled everything from programming to game design to art creation. Developing this mobile game gave me a lot of insight on mobile game development and further increased my confidence in Unity development. </div>
+                        
+                        </div>
+                    <div class="rightside">
+                        <!--ProjTitle1-->
+                        <div class="ProjectTitle fade" style="z-index: 10;" data-fade-begin="140" data-fade-end="155" >
+                            <h1>Dungeon Escape</h1>
+                            <hr>
+                            <h3>Mobile 2D Unity Game</h3>
+                        </div>
+                        <div class="skills fade" style="margin-top: 2.5vh;" data-fade-begin="160" data-fade-end="175">
+                            <h1>Skills Required:</h1>
+                            <div style="float:left; max-width: 50%;">
+                                <ul style="margin-top: 0;">
+                                    <li>Unity Engine</li>
+                                    <li>C#</li>
+                                    <li>Mobile UX/UI</li>                            
+                                </ul>
+                            </div>
+                            <div style="float:left; max-width: 50%;">
+                                <ul style="margin-top: 0;">
+                                    <li>Game Design</li>
+                                    <li>Pixel Artwork</li>
+                                    <li>Animation</li>                            
+                                </ul>
+                            </div>
+                            <div style="clear: both;"></div> 
+
+                        </div>
+                        <div class="videoWrap pixelImg fade" data-fade-begin="185" data-fade-end="200">
+                            <div class="videoCap" >Tutorial Level - (fullscreen for clear text)</div>
+                            <video width="100%" height="auto" controls muted loop autoplay>
+                                <source src="DungeonEscape/DEtut_m.mp4" type="video/mp4">
+                                <source src="DungeonEscape/DEtut_m.mp4" type="video/ogg">
+                              Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        
+                    </div>
+                    <div style="clear: both;"></div> 
+
+                </div>
+            </div>
+            
+                <!--Project2-->
+
+            <div class="contentWrapper mainBG" data-scroll-speed="3" data-fast-scroll-speed="3">
+                <div id="proj2" class="ProjectWrapper" >
+                    <div class="leftside" >
+                        <!--ProjTitle1-->
+                        <div class="ProjectTitle fade" style="z-index: 10;" data-fade-begin="245" data-fade-end="260">
+                            <h1>Space Laser VR</h1>
+                            <hr>
+                            <h3>Virtual Reality Space Game</h3>
+                        </div>
+                        <div class="skills fade" style="margin-top: 2.5vh; " data-fade-begin="260" data-fade-end="275">
+                            <h1>Skills Required:</h1>
+                            <div style="float:left; max-width: 50%; display: relative;">
+                                <ul style="margin-top: 0">
+                                    <li>Unity Engine</li>
+                                    <li>C#</li>
+                                    <li>Blender Modeling</li>                            
+                                </ul>
+                            </div>
+                            <div style="float:left; max-width: 50%; ">
+                                <ul style="margin-top: 0;">
+                                    <li>SteamVR</li>
+                                    <li>Oculus VR Integration</li>
+                                    <li>Physics</li>                            
+                                </ul>
+                            </div>
+                            <div style="clear: both;"></div> 
+                        </div>
+                        <div class="videoWrap fade" data-fade-begin="275" data-fade-end="290">
+                            
+                            <video height="auto" width="100%" controls muted loop autoplay>
+                                <source src="SpaceLaserVR/SpaceLaserVRDemo1.mp4" type="video/mp4">
+                                <source src="SpaceLaserVR/SpaceLaserVRDemo1.mp4" type="video/ogg">
+                              Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="cap1">Capsules are representative of compressed air canisters. User can also push off of asteroids to propell themselves in this zero gravity environment.</div>
+                        
+                    </div>
+                    <div class="rightside" >
+                        
+                        <div class="block fade" data-fade-begin="255" data-fade-end="270">
+                            <img src="SpaceLaserVR/oculus_s.jpg" alt="Oculus Rift">
+                        </div>
+                        
+                        <div class="paragraph fade" style=" margin-top:2.5vh; z-index: 3; "  data-fade-begin="170" data-fade-end="185">“Space Laser VR” is a Unity based, 3D Virtual Reality, Space Simulation game. I became really interested in Virtual Reality, but I had one big complaint; I disliked how movement options in other games feel clunky and immersion breaking. I thought to combat this by finding an environment, outer space, where movement could be handled avoiding these gimmikey solutions. To do this, I decided to use a compressed air compulsion system- heavily inspired by the movie Wall-E. Currently, I am currently working on making the environment and interactions 100% physics-based for maximum realism.</div>
+                    </div>
+                    <div style="clear: both;"></div> 
+                </div>
+            </div>
+            
+                <!--Project3-->
+            <div class="contentWrapper mainBG" data-scroll-speed="3" data-fast-scroll-speed="3">
+                <div id="proj3" class="ProjectWrapper" >
+                    <div class="leftside"  >
+                        <div class="videoWrap fade" style="margin-top:0;" data-fade-begin="150" data-fade-end="165" ><img style="width: 100%; height: auto; min-width: 50%;" src="OpSys/screenshot1.png" alt="Operating System SS"></div>
+                        <!--DE parag-->
+                        <div class="paragraph fade" style=" margin-top:2.5vh;  z-index: 3; "  data-fade-begin="170" data-fade-end="185">I created a pseudo Operating System that manages multiple disks, users, and printers; each of which run concurrently. Each user, running in parallel, reads its assigned input text file that contains commands to either store or print data. Upon receiving a command to store data, the user must request and wait for an available disk to write the data to. When a command to print data is received, a print job is created. Three printers work in parallel to complete these print jobs by retrieving the correct data from a disk.  </div>
+                        
+                        </div>
+                    <div class="rightside">
+                        <!--ProjTitle1-->
+                        <div class="ProjectTitle fade" style="z-index: 10;" data-fade-begin="140" data-fade-end="155" >
+                            <h1>Operating System</h1>
+                            <hr>
+                            <h3>Multithreaded Java Program</h3>
+                        </div>
+                        <div class="skills fade" style="margin-top: 2.5vh;" data-fade-begin="160" data-fade-end="175">
+                            <h1>Skills Required:</h1>
+                            <div style="float:left; max-width: 50%;">
+                                <ul style="margin-top: 0;">
+                                    <li>Java</li>
+                                    <li>Concurrency</li>
+                                    <li>JavaFX</li>                            
+                                </ul>
+                            </div>
+                            <div style="clear: both;"></div> 
+                        </div>
+                        <div class="videoWrap fade" data-fade-begin="275" data-fade-end="290">
+                            
+                            <video height="auto" width="100%" controls muted loop autoplay>
+                                <source src="OpSys/OSDemo.mp4" type="video/mp4">
+                                <source src="OpSys/OSDemo.mp4" type="video/ogg">
+                              Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div style="margin: 2.5vh auto 0 auto; width: 75%;">
+                            <div class="ResumeBox" style="margin-top: 0; margin-left:0; width: 48%;">
+                                <div class="table">
+                                    <div class="textCenter">
+                                        <span class="Resume" onclick="window.open('OpSys/Report.pdf')">REPORT</span>
+                                    </div>
+                                </div>
+                            </div><div class="ResumeBox" style="margin-top: 0; margin-left:4%; width: 48%;">
+                                <div class="table">
+                                    <div class="textCenter">
+                                        <span class="Resume" onclick="window.open('https://github.com/chen-ethan/BasicOperatingSystem')">CODE</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div style="clear: both;"></div> 
+                </div>
+            </div>
+            
+                <!--Project4-->
+            <div class="contentWrapper mainBG" data-scroll-speed="3" data-fast-scroll-speed="3">
+                <div id="proj4" class="ProjectWrapper" >
+                    <div class="leftside" >
+                        <!--ProjTitle1-->
+                        <div class="ProjectTitle fade" style="z-index: 10;" data-fade-begin="245" data-fade-end="260">
+                            <h1>Fit Factory</h1>
+                            <hr>
+                            <h3>Sparkfun WebApp - Azure IOT </h3>
+                        </div>
+                        <div style="clear: both;"></div> 
+                        <div class="skills fade" style="margin-top: 2.5vh;" data-fade-begin="160" data-fade-end="175">
+                            <h1>Skills Required:</h1>
+                            <div style="float:left; max-width: 50%; display: relative;">
+                                <ul style="margin-top: 0">
+                                    <li>C</li>
+                                    <li>Azure IOT Hub</li>
+                                    <li>Sparkfun Wiring</li>                            
+                                </ul>
+                            </div>
+                            <div style="float:left; max-width: 50%; ">
+                                <ul style="margin-top: 0;">
+                                    <li>Javascript</li>
+                                    <li>Arduino IDE</li>
+                                    <li>Sensor Input Analysis</li>                            
+                                </ul>
+                            </div>
+                            <div style="clear: both;"></div> 
+                        </div>
+                        <div class="paragraph" style="margin-top: 1.25vh">Fit Factory is an IOT project that uses a Sparkfun contraption to collect user heart rate and movement data during a workout. The contraption used a particle sensor for heart rate estimation and an accelerometer for movement tracking. This data is sent by bluetooth to an Azure IOT Hub, and then broadcast to the web application.</div>
+                         <div class="videoWrap fade" data-fade-begin="150" data-fade-end="165" ><img style="height: auto; width:100%; min-width: 50%;" src="FitFactory/Rig.PNG"></div>
+                        
+                    </div>
+                    <div class="rightside" >                        
+                        
+                        <div class="videoWrap fade" style="margin-top: 0;" data-fade-begin="150" data-fade-end="165" >
+                            <img style="height: auto; width:100%;" src="FitFactory/initial.png">
+                        </div>
+                        <div class="cap1" >The User is prompted by the web application to enter their age and weight. After this is done, there is a calibration period where our sensors and Sparkfun code determine the resting heartrate of the user.</div>
+                        <div class="videoWrap fade" data-fade-begin="150" data-fade-end="165" ><img style="height: auto; width:100%; min-width: 50%;" src="FitFactory/Final.PNG">
+                        </div>
+                        <div class="cap1" >The User is then prompted to perform an exercise. During the exercise, only the users movements are calculated. Then, the user rests while their heartrate is being recorded. This data is used to calculate the estimated burnt calories, which determines the size of the orange figure!</div>
+                        <div style="margin: 2.5vh auto 0 auto; width: 75%;">
+                            <div class="ResumeBox" style="margin:auto auto auto auto;  width: 60%; float: none;">
+                                <div class="table">
+                                    <div class="textCenter">
+                                        <span class="Resume" onclick="window.open('FitFactory/FitFactoryReport.pdf')">REPORT</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="clear: both;"></div> 
+                </div>
+            </div>
+            
+            
+            
+            <!--section3   Education---->
+            <div class="contentWrapper twoBG" data-scroll-speed="3" data-fast-scroll-speed="3">
+                <!--Education-->
+                <div id="Education" class="EducationWrapper">
+                    <div class="contentHeader1 fade" style="" data-fade-begin="330" data-fade-end="345"><h1 style="color:#b17f00">Education</h1></div>
+                    <div class="EducationBlockWrapper">
+                        <div class="EducationBlock" style="top: 5vh;" >
+                            <div class="EducationTextWrap">
+                                <div class="VertAlign">
+                                    <h1>Programming in C++</h1>
+                                </div></div>
+                            <h2>Programming in C++</h2>
+                            <div class="leftside">
+                                <div class="img_cropper" >
+                                    <img src="Education/c++_logo.png" alt="c++">
+                                </div></div>
+                            <div class="rightside">
+                                <div class="language">Skills: C++, vim</div>
+                                <ul>
+                                    <li>This course introduced me to the behavior of C++.</li>
+                                    <li>I learned how to use the language and how to use pointers.</li>
+                                    <li>I really enjoyed the control that C++ offered.</li>
+                                    <li>I felt like I really had to force myself to understand exactly what my code was doing at all times.</li>
+                                    <li>For this reason, C++ is my favorite programming language.</li>
+                                </ul>
+                                <!--
+                                <p>This course introduced me to the inner-workings of c++. I learned how to use the language and how to use pointers. I really enjoyed the control that c++ offered. I felt like I really had to force myself to understand exactly what my code was doing at all times. This helped my understanding of code in other languages as well. For this reason, C++ is my favorite programming language.</p>
+                                -->
+                            </div>
+                        </div>
+                        <div class="EducationBlock" style="top: 25vh;">
+                            <div class="EducationTextWrap">
+                                <div class="VertAlign">
+                                    <h1>Programming in Java</h1>
+                                </div></div>
+                            <h2>Programming in Java</h2>
+                            <div class="leftside">
+                                <div class="img_cropper" >
+                                    <img src="Education/java_logo.png" alt="java">
+                                </div></div>
+                            <div class="rightside">
+                                <div class="language">Skills: Java, Android Studio, Firebase</div>
+                                <ul>
+                                    <li>This course further developed my skill and comfort in Java.</li>
+                                    <li>I find Java to be very verbose, however, there is a ton of useful built in libraries that can be taken advantage of.</li>
+                                    <li>I also built an Android Studio application for this class, helping me diversify my mobile development skill set.</li>
+                                    <li>Java is the language I am most comfortable with behind C++.</li>
+                                
+                                </ul>
+                                
+                                <!--
+                                <p>This course further developed my skill and comfort in Java. I find Java to be very verbose, however, there is a ton of useful built in libraries that can be taken advantage of. I also built an Android Studio application for this class, helping me diversify my mobile development skill set. Java is the language I am most comfortable with behind C++.</p>-->
+                            </div>
+                        </div>
+                        
+                        <div class="EducationBlock" style="top: 45vh;">
+                            <div class="EducationTextWrap">
+                                <div class="VertAlign">
+                                    <h1>Programming with Software Libraries</h1>
+                                </div></div>
+                            <h2>Programming with Software Libraries</h2>
+                            <div class="leftside">
+                                <div class="img_cropper" >
+                                    <img src="Education/python.png" alt="python">
+                                </div></div>
+                            <div class="rightside">
+                                <div class="language">Skills: Python, Python Libraries, API integration</div>
+                                <ul>
+                                    <li>This course taught me how to utilize all of the resources that Python and third party libraries have available.</li>
+                                    <li>Wrote a networked Connect Four game that would connect to a UCI host server.</li>
+                                    <li>Built a working navigation system using Google’s map API.</li>
+                                    <li>Programmed an Othello board game and GUI using Tkinter.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="EducationBlock" style="top: 65vh;">
+                            <div class="EducationTextWrap">
+                                <div class="VertAlign">
+                                    <h1>Data Structures</h1>
+                                </div></div>
+                            <h2>Data Structures</h2>
+                            <div class="leftside">
+                                <div class="img_cropper" >
+                                    <img src="Education/data_structures.png" alt="data structures">
+                                </div></div>
+                            <div class="rightside">
+                                <div class="language">Skills: C++, vim</div>
+                                <ul>
+                                    <li>I learned the importance of having efficient storage methods and its implications on large data sets.</li>
+                                    <li>I also learned about different sorting algorithms and when to use them.</li>
+                                    <li>Learning about different data structures in C++ helped me see the language’s strengths when developing efficient programs.</li>
+                                    <li>This is the most impactful class I’ve taken in regards to my development as a quality programmer.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="EducationBlock" style="top: 85vh;" >
+                            <div class="EducationTextWrap">
+                                <div class="VertAlign">
+                                    <h1>Information Retrieval</h1>
+                                </div></div>
+                            <h2>Information Retrieval</h2>
+                            <div class="leftside">
+                                <div class="img_cropper" >
+                                    <img src="Education/google_2.jpg" alt="IR">
+                                </div></div>
+                            <div class="rightside">
+                                <div class="language">Skills: Python, MongoDB</div>
+                                <ul>
+                                    <li>This class taught me how a search engine works. I learned how to tokenize a search query as well as the words on a webpage.</li>
+                                    <li>I learned how “Term Frequency, Inverse Document Frequency” (TF-IDF) is used to display relevant pages inside of a search engine.</li>
+                                    <li>I learned about different techniques a webpage can use to increase its ranking among the search results.</li> 
+                                    <li>Alongside a partner, I built out a search engine that would display page results for web pages in the UCI domain.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="EducationBlock" style="top: 105vh;">
+                            <div class="EducationTextWrap">
+                                <div class="VertAlign">
+                                    <h1>Data Management</h1>
+                                </div></div>
+                            <h2>Data Management</h2>
+
+                            <div class="leftside">
+                                <div class="img_cropper" >
+                                    <img src="Education/mySQL.png" alt="mySQL">
+                                </div></div>
+                            <div class="rightside">
+                                <div class="language">Skills: MySQL</div>
+                                
+                                <ul>
+                                    <li>Learned how to use a database management system through the use of MySQL.</li>
+                                    <li>Set up a database to allow for efficient storage and retrieval of data.</li>
+                                    <li>Analyzed the speed of data retrieval request commands.</li>
+                                    <li>Focused a lot of time on optimizing data retrieval queries.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="EducationBlock" style="top: 125vh;">
+                            <div class="EducationTextWrap">
+                                <div class="VertAlign">
+                                    <h1>Concepts in Programming</h1>
+                                </div></div>
+                            <h2>Concepts in Programming</h2>
+                            <div class="leftside">
+                                <div class="img_cropper" >
+                                    <img src="Education/code.jpg" alt="concepts">
+                                </div></div>
+                            <div class="rightside">
+                                <div class="language">Skills:  C++, C, Java, Lisp, Prolog</div>
+                                <ul>
+                                    <li>OOP: Polymorphism & Overloading.</li>
+                                    <li>Dynamic vs. Static binding.</li>
+                                    <li>Functional Programming using Lisp.</li>
+                                    <li>Declarative Logic Programming; Prolog. </li>
+                                    <li>Parameter passing: pass by copy, reference, and name.</li>
+                                    <li>Scoping and observing the relationship of local vs. global variables.</li>
+                                    <li>Activation Records managing variables.</li>
+                                    <li>Concurrent programming using threads.</li>
+                                    <li>Synchronizing threads with the use of semaphores to control data access.</li>
+                                    
+                                
+                                
+                                </ul>    
+                            </div>
+                        </div>
+                        <div class="EducationBlock" style="top: 145vh;">
+                            <div class="EducationTextWrap">
+                                <div class="VertAlign">
+                                    <h1>Compilers and Interpreters</h1>
+                                </div></div>
+                            <h2>Compilers and Interpreters</h2>
+                            <div class="leftside">
+                                <div class="img_cropper" >
+                                    <img src="Education/binary.svg" alt="compilers">
+                                </div></div>
+                            <div class="rightside">
+                                <div class="language">Skills:  C++, Flex, Bison</div>
+                                <ul>
+                                    <li>Lexical analysis: Scanning, tokenization using finite state automata.</li>
+                                    <li>Parsing: Checking if token stream follows grammar.</li>
+                                    <li>Demonstrated importance of non-ambiguous grammar.</li>
+                                    <li>Analyzed Top-Down (LL) vs. Bottom-Up (LR) Parsing.</li>
+                                    <li>Used and Studied Bison Parser.</li>
+                                    <li>Type checking: Symbol Tables.</li>
+                                    <li>Practiced Code Generation / Optimization</li>
+                                    <li>Interpreter: scanning and parsing done at run-time.</li>
+                                </ul>
+                            
+                            </div>
+                        </div>
+                        <div class="EducationBlock" style="top: 165vh;">
+                            <div class="EducationTextWrap">
+                                <div class="VertAlign">
+                                    <h1>Operating Systems</h1>
+                                </div></div>
+                            <h2>Operating Systems</h2>
+                            <div class="leftside">
+                                <div class="img_cropper" >
+                                    <img src="Education/OS.png" alt="OS">
+                                </div></div>
+                            <div class="rightside">
+                                <div class="language">Skills: Java, CPU Scheduling</div>
+                                <ul>
+                                    <li>Processes vs. Threads</li>
+                                    <li>Interprocess communication: shared data / passing data.</li>
+                                    <li>Scheduling Algorithms: Shortest Job First, Shortest Remaining Time First, First Come First Serve, Round-Robin.</li>
+                                    <li>Synchronization: using semaphores to manage the access of shared data in a programs critical section.</li>
+                                    <li>Deadlocks: Learned what can cause a process to wait indefinately, as well as how to avoid it.</li>
+                                    <li>Memory: Paging & Segmentation</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="EducationBlock" style="top: 185vh;">
+                            <div class="EducationTextWrap">
+                                <div class="VertAlign">
+                                    <h1>Multitasking OS (UNIX)</h1>
+                                </div></div>
+                            <h2>Multitasking OS (UNIX)</h2>
+                            <div class="leftside">
+                                <div class="img_cropper" >
+                                    <img src="Education/bash.png" alt="unix">
+                                </div></div>
+                            <div class="rightside">
+                                <div class="language">Skills: Unix, sh, bash, C, C++</div>
+                                <ul> 
+                                    <li>Learned how to write shell scripts for bash and sh.</li>
+                                    <li>Learned about file systems architecture.</li>
+                                    <li>Manipulated file system with shell scripting.</li>
+                                    <li>Practiced using awk, sed, and grep for efficient data manipulation.</li>
+                                    <li>Developed C programs to manipulate file systems.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="EducationBlock" style="top: 205vh;">
+                            <div class="EducationTextWrap">
+                                <div class="VertAlign">
+                                    <h1>Intro to Artificial Intelligence</h1>
+                                </div></div>
+                            <h2>Intro to Artificial Intelligence</h2>
+                            <div class="leftside">
+                                <div class="img_cropper" >
+                                    <img src="Education/wumpus.png" alt="Intro AI">
+                                </div></div>
+                            <div class="rightside">
+                                <div class="language">Skills: Python</div>
+                                <ul>
+                                    <li>Studied different search algorithms.</li>
+                                    <li>Learned about probability analysis and Bayesian Networks to make confident decisions.</li>
+                                    <li>Learned First Order Logic and how to infer knowledge using it.</li>
+                                    <li>Developed AI to solve <span onclick="window.open('Education/Wumpus_World_Student_Manual.pdf')" style="cursor:  pointer; pointer-events: all;"><u>Wumpus World</u></span>.</li>
+                                    <li>Final Wumpus World submission scored in the top 10 percentile of the class, having an average score of 256.</li>
+                                </ul>    
+                            </div>
+                        </div>
+                        <div class="EducationBlock" style="top: 225vh;">
+                            <div class="EducationTextWrap">
+                                <div class="VertAlign">
+                                    <h1>Machine Learning & Data Mining</h1>
+                                </div></div>
+                            <h2>Machine Learning & Data Mining</h2>
+                            <div class="leftside">
+                                <div class="img_cropper" >
+                                    <img src="Education/machine_learning.png" alt="ML DM">
+                                </div></div>
+                            <div class="rightside">
+                                <div class="language">Skills: Python, SKLearn, numpy, matplotlib</div>
+                                <ul>
+                                    <li>Learned about Bayes classifier and how to train a predictive model.</li>
+                                    <li>Used K-nearest neighbors to classify data.</li>
+                                    <li>Studied linear regression and linear classification.</li>
+                                    <li>Used Decision Trees to classify e-mails as either spam or not.</li>
+                                    <li>Used a Naive Bayes classifier to predict positive or negative sentiment of online reviews. Improved prediction accuracy by applying an Entropy threshold to filter out words with a neutral meaning.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="EducationBlock" style="top: 245vh;">
+                            <div class="EducationTextWrap">
+                                <div class="VertAlign">
+                                    <h1>IOT Embedded Systems</h1>
+                                </div></div>
+                            <h2>IOT Embedded Systems</h2>
+                            <div class="leftside">
+                                <div class="img_cropper" >
+                                    <img src="Education/arduino.png" alt="IOT">
+                                </div></div>
+                            <div class="rightside">
+                                <div class="language">Skills: Arduino, Sparkfun, C, Azure IOT Hub</div>
+                                <ul>
+                                    <li>Received and sent analog values to actuators on an Arduino Uno when developing a light metering gauge.</li>
+                                    <li>used communication protocols UART, SPI, and I2C to read data from a touch sensor connected to an Arduino Uno.</li>
+                                    <li>Developed a traffic light Arduino system that changef colors on a timer.</li>
+                                    <li>Created a Sparkfun accelerometer program that counted steps. The data was sent via bluetooth to a mobile phone.</li>
+                                    <li>Sent data from Sparkfun to Azure IOT Hub and displayed data in localhost Web App.</li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="EducationBlock" style="top: 265vh;">
+                            <div class="EducationTextWrap">
+                                <div class="VertAlign">
+                                    <h1>Design & Analysis of Algorithms</h1>
+                                </div></div>
+                            <h2>Design & Analysis of Algorithms</h2>
+                            <div class="leftside">
+                                <div class="img_cropper" >
+                                    <img src="Education/algorithm.svg" alt="virtual memory">
+                                </div></div>
+                            <div class="rightside">
+                                <div class="language">Note: Currently Enrolled<br>Course covers the following:</div>
+                                <ul>
+                                    <li>Data Structures and Sorting Algorithms</li>
+                                    <li>Selection and Integer sorting</li>
+                                    <li>Divide and Conquer Algorithms</li>
+                                    <li>Graph representation and traversal</li>
+                                    <li>Shortest path & minimum spanning trees</li>
+                                    <li>Dynamic programming</li>
+                                    
+                                
+                                </ul>
+                            
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            
+            <!--section 4 Experience----------------->
+            
+            <div class="contentWrapper mainBG"  data-scroll-speed="3" data-fast-scroll-speed="3">
+                <div id="Experience" class="ExperienceWrapper">
+                    <div class="contentHeader1 fade" data-fade-begin="640" data-fade-end="655"><h1>Experience</h1></div>
+                    <div class="ExperienceBlock" >
+                        <div class="header">
+                            <span class="company">Zynga</span>
+                            <span class="title">Game Design Intern</span>
+                            <span class="time">June 2015 - September 2015</span>
+                        </div>
+                        <div class="leftside">
+                            <div class="img_cropper" >
+                                <img src="Experience/Zynga.jpg" alt="Zynga"></div></div>
+                        <div class="rightside">
+                            <ul style="margin-top: 0;">
+                                <li>I contributed to an upcoming game belonging to the Farmville franchise.</li>
+                                <li>Under the guidance of a senior game designer, I provided original input for and wrote game feature specs defining the needs and parameters on selected features that were implemented into the game.</li>
+                                <li>Using Unity and Json, I also fixed image and text bugs, and cleaned up code base for unnecessary files.</li>                        
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="ExperienceBlock" >
+                        <div class="header">
+                            <span class="company">Chen Design Associates</span>
+                            <span class="title">Development/UX Intern</span>
+                            <span class="time">June 2019 - current</span>
+                        </div>
+                        <div class="leftside">
+                            <div class="img_cropper" >
+                                <img src="Experience/CDA.png" alt="CDA"></div></div>
+                        <div class="rightside">
+                            <ul style="margin-top: 0;">
+                                <li>Took five webpage wireframes provided by the UX team and using HTML, CSS, and JavaScript, built out multiple webpages experimenting with unique interactions.</li>
+                                <li>Created a custom search engine in Python for a client that would give results specific to the clients expansive list of capabilities. I integrated this search engine into a PHP Wordpress template.            
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    <div class="ExperienceBlock" >
+                        <div class="header">
+                            <span class="company">Video Game Design Club</span>
+                            <span class="title">Unity C# Developer</span>
+                            <span class="time">Jan 2019 - June 2019</span>
+                        </div>
+                        <div class="leftside">
+                            <div class="img_cropper" >
+                                <img src="Experience/VGDC.jpg" alt="VGDC"></div></div>
+                        <div class="rightside">
+                            <ul style="margin-top: 0;">
+                                <li>I worked within a team of four engineers, a game designer, and one writer to develop a minimum viable product “Downfall” for the Video Game Design Club at UC Irvine.</li>
+                                <li>Utilizing Unity Tilemaps, I created a grid-based,  isometric view, 2D attack/defense game.</li>
+                                <li>Using a GitHub repository with multiple development branches, we were able to simultaneously and independently contribute our weekly tasks to the project.</li>          
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    <div class="ExperienceBlock" >
+                        <div class="header">
+                            <span class="company">Virtual Reality Club</span>
+                            <span class="title">Oculus Unity C# Developer</span>
+                            <span class="time">Jan 2019 - June 2019</span>
+                        </div>
+                        <div class="leftside">
+                            <div class="img_cropper" >
+                                <img src="Experience/VR.png" alt="VR"></div></div>
+                        <div class="rightside">
+                            <ul style="margin-top: 0;">
+                                <li> Utilizing Oculus Unity Integration, I created a Virtual Reality minigame in which the player is a giant gorilla on top of the empire state building and uses the Oculus Go headset and controller to look around and swat at and destroy planes flying by.</li>
+                                <li>The game was made as a contribution to the UCI Virtual Reality Club’s compilation of VR minigames.</li>         
+                            </ul>
+                        </div>
+                        
+                    </div>
+                
+                </div>
+            </div>
+             
+            
+            
+            
+            
+            <!--section 5 Skills--------------->
+            <div class="contentWrapper twoBG" data-scroll-speed="3" data-fast-scroll-speed="3">
+                <div id="Skills" class="SkillsWrapper">
+                    <div class="contentHeader1 fade"data-fade-begin="840" data-fade-end="855" ><h1 style="color:#b17f00">Skills</h1></div>
+                    <div class="SkillsContainer">
+                        <div class="SkillsBlock">
+                            <div class="table">
+                                <div class="textCenter">
+                                    <h1>C++</h1><p>3 Years</p><p class="Preferred">Preferred</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="SkillsBlock">
+                            <div class="table">
+                                <div class="textCenter">
+                                    <h1>Java</h1><p>4 Years</p><p class="Proficient">Proficient</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="SkillsBlock">
+                            <div class="table">
+                                <div class="textCenter">
+                                    <h1>Python</h1><p>3 Years</p><p class="Proficient">Proficient</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="SkillsBlock">
+                            <div class="table">
+                                <div class="textCenter">
+                                    <h1>C#</h1><p>2 Years</p><p class="Comfortable">Comfortable</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="SkillsBlock">
+                            <div class="table">
+                                <div class="textCenter">
+                                    <h1>C</h1><p>2 Years</p><p class="Adequate">Adequate</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="SkillsBlock">
+                            <div class="table">
+                                <div class="textCenter">
+                                    <h1>Java Script</h1><p>3 Years</p><p class="Comfortable">Comfortable</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="SkillsBlock">
+                            <div class="table">
+                                <div class="textCenter">
+                                    <h1>Unity</h1><p>3 Years</p><p class="Proficient">Proficient</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="SkillsBlock">
+                            <div class="table">
+                                <div class="textCenter">
+                                    <h1>Git</h1><p>4 Years</p><p class="Proficient">Proficient</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="SkillsBlock">
+                            <div class="table">
+                                <div class="textCenter">
+                                    <h1>Oculus VR</h1><p>1 Year</p><p class="Experimenting">Experimenting</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="SkillsBlock">
+                            <div class="table">
+                                <div class="textCenter">
+                                    <h1>Arduino</h1><p>6 Months</p><p class="Experimenting">Experimenting</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="SkillsBlock">
+                            <div class="table">
+                                <div class="textCenter">
+                                    <h1>MySQL</h1><p>6 Months</p><p class="Adequate">Adequate</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="SkillsBlock">
+                            <div class="table">
+                                <div class="textCenter">
+                                    <h1>Unix</h1><p>2 Years</p><p class="Proficient">Proficient</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="SkillsBlock">
+                            <div class="table">
+                                <div class="textCenter">
+                                    <h1>Windows</h1><p>4 Years</p><p class="Proficient">Proficient</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="SkillsBlock">
+                            <div class="table">
+                                <div class="textCenter">
+                                    <h1>MacOS</h1><p>3 Years</p><p class="Proficient">Proficient</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="SkillsBlock">
+                            <div class="table">
+                                <div class="textCenter">
+                                    <h1>CSS3</h1><p>1 Year</p><p class="Comfortable">Comfortable</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="SkillsBlock">
+                            <div class="table">
+                                <div class="textCenter">
+                                    <h1>HTML5</h1><p>1 Year</p><p class="Comfortable">Comfortable</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                    </div>
+
+                </div>
+            </div>
+                    <!--section 5 Contact-->
+
+            
+            <div class="footer" data-scroll-speed="0" data-fast-scroll-speed="0" style="z-index: -10">
+                <div class="footerContents">
+                    <h1>CONTACT ME</h1>
+                    <div class="ResumeBox">
+                        <div class="table">
+                            <div class="textCenter">
+                                <span class="Resume" onclick="window.open('EPC_Resume.pdf')">RESUME</span>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div style="position: relative; text-align: left; margin: 2.5vh 10% 0% 10%">
+                        <div style=" margin: 0 auto 0 auto;  display: inline-block;">
+                            <span   onclick="window.open('https://www.linkedin.com/in/ethanpchen/')" target="_blank" class="fa fa-linkedin" style="font-size: 25px; width: 25px; height: 25px; cursor: pointer;"></span>
+                            <span onclick="window.open('https://github.com/chen-ethan')" target="_blank" class="fa fa-github"  style="font-size: 25px; width: 25px; height: 25px; cursor: pointer;"></span>
+                            <span onclick="window.open('mailto:ethanchen111@gmail.com')" class="material-icons fa fa-mail" style="font-size: 25px; width: 25px; height: 25px; cursor: pointer;" >email</span>
+                        </div>
+                    </div>
+                    <p>ethanchen111@gmail.com &nbsp; | &nbsp;415.926.3939</p>
+                </div>
+
+
+            </div>
+
+        </div><!--wrapper-  onclick="window.open('EPC_Resume.pdf')"-->
+        
+        
+        
+
+        
+            
+            
+        <script src="window.js" type="text/javascript"></script>         
+
+        
+    </body>
+</html>
+
+<!--comments look like this
+style="font-size: 15px"
+
+
+                <div class="text">Caption Dungeon Escape</div>        
+
+-->
